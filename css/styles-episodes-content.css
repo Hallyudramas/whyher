@@ -1,0 +1,208 @@
+.trailer,
+.episode-uno,
+.episode-dos,
+.episode-tres,
+.episode-cuatro,
+.episode-cinco,
+.episode-seis,
+.episode-siete,
+.episode-ocho,
+.episode-nueve,
+.episode-diez,
+.episode-once,
+.episode-doce,
+.episode-trece,
+.episode-catorce,
+.episode-quince,
+.episode-dieciseis {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100000;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    backdrop-filter: blur(20px);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+.list-episodes {
+    position: fixed;
+    top: 0;
+    left: -500px;
+    background: #fff;
+    width: 500px;
+    height: 100vh;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transition: all 300ms;
+}
+
+.list-show {
+    left: 0px;
+}
+
+.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.trailer .content-iframe {
+    width: 1280px;
+    height: 720px;
+}
+
+.content-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-list ul li {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.content-list ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    background: #333;
+    border-radius: 10px;
+}
+
+.content-episode-uno,
+.content-episode-dos,
+.content-episode-tres,
+.content-episode-cuatro,
+.content-episode-cinco,
+.content-episode-seis,
+.content-episode-siete,
+.content-episode-ocho,
+.content-episode-nueve,
+.content-episode-diez,
+.content-episode-once,
+.content-episode-doce,
+.content-episode-trece,
+.content-episode-catorce,
+.content-episode-quince,
+.content-episode-dieciseis {
+    width: 1280px;
+    height: 720px;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    outline: none;
+}
+
+h2 {
+    color: #fff;
+    font-size: 100px;
+    text-align: center;
+}
+
+.close,
+.close-list,
+.close-uno,
+.close-dos,
+.close-tres,
+.close-cuatro,
+.close-cinco,
+.close-seis,
+.close-siete,
+.close-ocho,
+.close-nueve,
+.close-diez,
+.close-once,
+.close-doce,
+.close-trece,
+.close-catorce,
+.close-quince,
+.close-dieciseis {
+    width: 50px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    filter: invert(1);
+}
+
+@media screen and (max-width: 768px) {
+    .trailer .content-iframe {
+        width: 360px;
+        height: 265px;
+    }
+
+    .content-episode-uno,
+    .content-episode-dos,
+    .content-episode-tres,
+    .content-episode-cuatro,
+    .content-episode-cinco,
+    .content-episode-seis,
+    .content-episode-siete,
+    .content-episode-ocho,
+    .content-episode-nueve,
+    .content-episode-diez,
+    .content-episode-once,
+    .content-episode-doce,
+    .content-episode-trece,
+    .content-episode-catorce,
+    .content-episode-quince,
+    .content-episode-dieciseis {
+        width: 360px;
+        height: 265px;
+    }
+
+    .list-episodes {
+        width: 250px;
+    }
+
+    iframe {
+        width: 100%;
+        height: 100%;
+        outline: none;
+    }
+
+    h2 {
+        color: #333;
+        font-size: 50px;
+    }
+}
+
+@media screen and (width: 1024px) {
+    .trailer .content-iframe {
+        width: 760px;
+        height: 515px;
+    }
+
+    .content-episode-uno,
+    .content-episode-dos,
+    .content-episode-tres,
+    .content-episode-cuatro,
+    .content-episode-cinco,
+    .content-episode-seis,
+    .content-episode-siete,
+    .content-episode-ocho,
+    .content-episode-nueve,
+    .content-episode-diez,
+    .content-episode-once,
+    .content-episode-doce,
+    .content-episode-trece,
+    .content-episode-catorce,
+    .content-episode-quince,
+    .content-episode-dieciseis {
+        width: 760px;
+        height: 515px;
+    }
+}
